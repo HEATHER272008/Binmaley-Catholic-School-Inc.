@@ -5,7 +5,6 @@ import PageHeader from "@/components/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, User, Loader2, Users } from "lucide-react";
-import placeholderPerson from "@/assets/placeholder-person.jpg";
 
 interface Organization {
   id: string;
@@ -121,16 +120,6 @@ const OrganizationDetail = () => {
   const MemberCard = ({ member }: { member: OrganizationMember }) => (
     <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
       <CardContent className="p-4 flex flex-col items-center text-center">
-        <div className="w-24 h-24 rounded-full overflow-hidden mb-3 bg-muted">
-          <img
-            src={member.photo_url || placeholderPerson}
-            alt={member.name}
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = placeholderPerson;
-            }}
-          />
-        </div>
         <h4 className="font-semibold text-foreground">{member.name}</h4>
         {member.position && (
           <p className="text-sm text-primary font-medium">{member.position}</p>
@@ -235,18 +224,11 @@ const OrganizationDetail = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
                   {regularMembers.map((member) => (
                     <Card key={member.id} className="border-0 shadow-sm">
-                      <CardContent className="p-3 flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full overflow-hidden bg-muted flex-shrink-0">
-                          <img
-                            src={member.photo_url || placeholderPerson}
-                            alt={member.name}
-                            className="w-full h-full object-cover"
-                            onError={(e) => {
-                              (e.target as HTMLImageElement).src = placeholderPerson;
-                            }}
-                          />
-                        </div>
-                        <span className="text-sm font-medium truncate">{member.name}</span>
+                      <CardContent className="p-3 text-center">
+                        <span className="text-sm font-medium">{member.name}</span>
+                        {member.position && (
+                          <p className="text-xs text-muted-foreground">{member.position}</p>
+                        )}
                       </CardContent>
                     </Card>
                   ))}
