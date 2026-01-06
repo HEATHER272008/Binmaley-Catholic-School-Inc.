@@ -89,11 +89,9 @@ const About = () => {
     and committed to serving God and community.`;
 
   const defaultCoreValues = [
-    { name: "Faith", description: "Rooted in Catholic teachings" },
-    { name: "Excellence", description: "Pursuit of academic quality" },
-    { name: "Integrity", description: "Honesty and moral uprightness" },
-    { name: "Service", description: "Commitment to community" },
-    { name: "Respect", description: "Dignity for all persons" },
+    { name: "Solidarity ", description: "As part of the 16 Catholic Schools of the Archdiocese that are unique in various and varied ways, BCSI commits to ONE ALDCS, fostering Unity in Diversity! The school acknowledge individual differences, and celebrate “Communio” in forming Christian stewards through Holistic Catholic Education and Formation. s" },
+    { name: "Discipleship ", description: "As a member school of ALDCS, BCSI nurture the spirituality of stewardship, that is, to be Christian Catholic disciples of the earth and of one another. We believe that we are called by God to be his collaborators in the work of creation, salvation, and sanctification. As Christian stewards, we receive God’s graces gratefully and cultivate them. As brothers and sisters under the Fatherhood of God, we share our time, talents, and treasures for His greater glory. As followers of Christ, we make others see Jesus in our lives and make others feel His selfless love for all through us, ushering in the kingdom of God. " },
+    { name: "Character", description: "In forming Christian Stewards, ALDCS hones young men and women to be living witnesses of the Word made flesh with the integration of the Gospel values in faith and life. We join hands in our noble task of producing alter “Christus” as reflected in our vision – mission statement. In addition, we provide quality education in the pursuit of academic excellence among our Learners in order to produce morally upright thinking, feeling, praying, and doing members of the church and society" },
   ];
 
   return (
@@ -214,16 +212,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-primary mb-4">Core Values</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  {(content?.core_values || defaultCoreValues).map((value, index) => (
-                    <li key={index}>• <strong>{value.name}:</strong> {value.description}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            
           </div>
         </section>
 

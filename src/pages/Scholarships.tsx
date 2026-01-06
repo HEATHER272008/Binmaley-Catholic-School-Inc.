@@ -28,23 +28,20 @@ const Scholarships = () => {
     },
     {
       icon: Heart,
-      title: "Financial Need Grant",
-      description: "Provides assistance to deserving students from low-income families.",
-      coverage: "Variable based on need assessment",
+      title: "Fr. Benecke's Scholarship Foundation",
+      description: "Alumni Funded Scholarship Grant (financial assistance varies) ",
+      coverage: "",
       requirements: [
-        "Proof of financial need",
-        "Good academic and behavior records",
-        "Application with supporting documents",
+        
       ],
     },
     {
       icon: Users,
-      title: "Sibling Discount",
-      description: "Special tuition discount for families with multiple children enrolled at BCSI.",
-      coverage: "10-20% per additional sibling",
+      title: "SHS - Government Funded Voucher Program",
+      description: "Php 17,500.00 for students coming from public schools and Php 14,000.00 for students coming from private schools",
+      coverage: "",
       requirements: [
-        "Two or more siblings enrolled simultaneously",
-        "Good standing for all enrolled siblings",
+        
       ],
     },
   ];

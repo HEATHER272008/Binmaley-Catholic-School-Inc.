@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/bcsi-logo.webp";
+import logo from "@/assets/FB_IMG_1767617453285.png";
 
 const Preloader = ({ onComplete }: { onComplete: () => void }) => {
   const [isVisible, setIsVisible] = useState(true);

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="font-serif font-bold text-xl mb-4">Binmaley Catholic School</h3>
+            <h3 className="font-serif font-bold text-xl mb-4">Binmaley Catholic School Inc.</h3>
             <p className="text-sm opacity-90 leading-relaxed">
               Excellence in Catholic Education. Nurturing minds, hearts, and souls since our founding.
             </p>
@@ -49,15 +49,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>Binmaley, Pangasinan, Philippines</span>
+                <span>Barangay Poblacion, Binmaley, Pangasinan, Philippines</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <span>(075) 123-4567</span>
+                <span>(075) 540-0145</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span>info@bcsi.edu.ph</span>
+                <span>binmaleycs@yahoo.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Facebook className="h-5 w-5 flex-shrink-0" />
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm opacity-90">
           <p>&copy; {currentYear} Binmaley Catholic School, Inc. All rights reserved.</p>
           <p className="mt-2 text-xs">
-            Concept and structure patented by Mark Emman Lopez.
+            Created By Stark Industries.
           </p>
           <Link 
             to="/login" 

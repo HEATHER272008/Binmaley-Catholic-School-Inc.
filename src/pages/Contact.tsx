@@ -37,7 +37,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-serif font-bold text-primary mb-2">Address</h3>
                       <p className="text-muted-foreground">
-                        [Complete Street Address]<br />
+                        Barangay Poblacion, Binmaley, Pangasinan, Philippines<br />
                         Binmaley, Pangasinan<br />
                         Philippines 2417
                       </p>
@@ -55,8 +55,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-serif font-bold text-primary mb-2">Phone</h3>
                       <p className="text-muted-foreground">
-                        (075) 123-4567<br />
-                        Mobile: +63 917 123 4567
+                        (075) 540-0145<br />
+                        Mobile: +63 910 088 9436
                       </p>
                     </div>
                   </div>
@@ -72,8 +72,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-serif font-bold text-primary mb-2">Email</h3>
                       <p className="text-muted-foreground">
-                        info@bcsi.edu.ph<br />
-                        registrar@bcsi.edu.ph
+                        binmaleycs@yahoo.com<br />
                       </p>
                     </div>
                   </div>

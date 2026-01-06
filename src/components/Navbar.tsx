@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/school-logo.jpg";
+import logo from "@/assets/FB_IMG_1767617453285.png";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
             <img src={logo} alt="BCSI Logo" className="h-12 w-12 object-contain" />
             <div className="hidden md:block">
-              <div className="font-serif font-bold text-xl">Binmaley Catholic School</div>
+              <div className="font-serif font-bold text-xl">Binmaley Catholic School Inc.</div>
               <div className="text-xs opacity-90">Excellence in Catholic Education</div>
             </div>
           </Link>
